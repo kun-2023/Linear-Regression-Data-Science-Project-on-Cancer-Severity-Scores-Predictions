@@ -62,3 +62,55 @@ There are in total 15 columns and 50000 rows.
 ![image](https://github.com/user-attachments/assets/e61aa286-fd93-4a5f-b700-43bfd21f7309)
 
 ## Part 2.3 Deep Learning 
+* Input layer has 100 neurons with activation function as relu, 2 hidden layers with 100 neurons for each with activation function as relu, output layer has one neuron with activation function as linear.
+![image](https://github.com/user-attachments/assets/f743939f-6b2a-4d88-ae70-6462f7e5d7c6)
+
+* Eventually, model loss and training loss are very close to zero.
+* The training r2 Score is 0.9998, and the testing r2 Score is 0.9998.
+* The training adjusted r2 Score is 0.9998, and the testing adjusted r2 Score is 0.9998.
+* The testing Mean Squared Error is 0.00027.
+* The testing Root Mean Squared Error is 0.01643.
+* the testing Mean Absolute Error is 0.01310.
+* It's a very good model as the predicted values and observed values form a line along the diagonal.
+
+![image](https://github.com/user-attachments/assets/a93cd2a9-cf02-4ef3-816a-04f9b125e851)
+
+![image](https://github.com/user-attachments/assets/f3226d95-26eb-4afa-b159-9e3c932018cb)
+
+
+## Part 3: KMeans Clustering
+* Ran a series of number of clusters between 2 and 15 and calculate its inertias and silhouette scores. 10 clusters would fetch the highest silhouette scores. Therefore n_clusters=10
+
+![image](https://github.com/user-attachments/assets/f58b273c-70e7-4d1d-8502-44673794269f)
+* Take a look at the cluster center of each clusters in order to label them. It turns out that the data is clustered in terms of cancer types.
+
+* Cluster 0: Liver Cancer.
+* Cluster 1: Lung Cancer
+* Cluster 2: Breast Cancer
+* Cluster 3: Cervical Cancer
+* Cluster 4: Prostate Cancer
+* Cluster 5: Colon Cancer
+* Cluster 6: Leukemia Cancer
+* Cluster 7: Skin Cancer
+![image](https://github.com/user-attachments/assets/ed6a5d46-8989-4dc6-8e73-05ca5a198f4e)
+
+* PCA visualizations. It turns out there are clusters inside clusters. 8 different clusters are combined and split into different small groups. Each cluster is also affected by cancer stages. Along the x-axis positive direction, it's more likely to be stage II cancer; along the x-axis negative direction, it's more likely to be Stage I and III cancer. Along y-axis positive, it's more likely to be stage I, II cancer; along y-axis negative, it's more likely to be stage I, II cancer.
+
+![image](https://github.com/user-attachments/assets/b8bb1b79-e421-4924-ab9c-fe349bae22ad)
+
+* Cluster DEA. Each cluster has roughly 20% of the patients in each stage. And Each cluster or cancer type have similar average severity scores.
+
+![image](https://github.com/user-attachments/assets/ebd8f531-cc88-41da-8178-5d0e95cc4b65)
+
+## Part 4: Conclusion & Recommendations
+* Gender and Country don't impact cancer severity. However, the air quality, the consumption of alcohol and cigarets, genetics would have affect the cancer severity.
+* To avoid and reduce cancer, one need to have a health diet and habit, and the pollution must be reduced.
+* Caner treatment can reduce cancer; however, they are extremely costy. Especially, those that works.
+* Any predictive model can predict with high accuracy.
+<br>
+Recommendations
+<br>
+* For 8 different cluser's customers, they need to be divided in terms of cancer stages, and for each cancer type at each cancer stage, they need to be given tailored treatment accordingly. Since the effective treatment was so expensive, a health care coverage could be in order.
+
+## The end
+## Thanks for reading
