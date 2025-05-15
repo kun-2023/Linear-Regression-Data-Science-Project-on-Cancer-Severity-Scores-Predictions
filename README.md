@@ -110,6 +110,7 @@ There are in total 15 columns and 50000 rows.
 <br>
 Recommendations
 <br>
+
 * For 8 different cluser's customers, they need to be divided in terms of cancer stages, and for each cancer type at each cancer stage, they need to be given tailored treatment accordingly. Since the effective treatment was so expensive, a health care coverage could be in order.
 
 ## The end
